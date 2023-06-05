@@ -24,9 +24,13 @@ func main() {
 	for scanner.Scan() {
 		line := scanner.Text()
 		if line == "" {
+
 			if higherCalories < calories {
 				higherCalories = calories
 			}
+
+			calories = 0
+
 		} else {
 			kcl, errAtoi := strconv.Atoi(line)
 
