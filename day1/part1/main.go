@@ -11,7 +11,7 @@ import (
 func main() {
 	higherCalories := 0
 	calories := 0
-	data, err := os.Open("input.txt")
+	data, err := os.Open("./input.txt")
 
 	if err != nil {
 		log.Fatal(err)
